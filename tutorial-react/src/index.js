@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // COMPONENTS
+// Square
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -11,7 +12,7 @@ function Square(props) {
     </button>
   );
 }
-  
+// Board  
   class Board extends React.Component {
     constructor(props) {
       super(props);
@@ -61,7 +62,7 @@ function Square(props) {
       );
     }
   }
-  
+  // Game
   class Game extends React.Component {
     render() {
       return (
