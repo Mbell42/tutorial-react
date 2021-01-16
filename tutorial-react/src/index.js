@@ -20,7 +20,7 @@ function Square(props) {
       return (
         <Square
           value={this.props.squares[i]}
-          onClick={() => this.props.handleClick(i)}
+          onClick={() => this.props.onClick(i)}
         />
       );
     }
@@ -109,7 +109,7 @@ function Square(props) {
             />
           </div>
           <div className="game-info">
-            <div>{status}</div>
+            <div className="statusText">{status}</div>
             <ol>{moves}</ol>
           </div>
         </div>
