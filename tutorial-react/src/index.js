@@ -90,7 +90,8 @@ function Square(props) {
       );
     }
   }
-
+  
+  // ========================================
   // win condition
   function calculateWinner(squares) {
     const lines = [
@@ -111,8 +112,6 @@ function Square(props) {
     }
     return null;
   }
-  
-  // ========================================
   
   ReactDOM.render(
     <Game />,
